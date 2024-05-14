@@ -1,25 +1,14 @@
+import 'package:chat/app.dart';
+import 'package:chat/utils/firebase/setup.dart';
+import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MyApp());
+void main() async {
+  await setup();
+  runApp(const ChatApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text("Home Screen"),
-        ),
-      ),
-    );
-  }
+Future<void> setup() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await setupFirebase();
 }

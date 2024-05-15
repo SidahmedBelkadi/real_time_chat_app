@@ -1,5 +1,14 @@
 const kLoginHeaderTitle = "Hi, Welcome Back!";
 const kLoginHeaderSubTitle = "Hello again, you've been missed";
 const kLogin = "Login";
+const kRegister = "Register";
 const kDontHaveAnAccount = "Don't Have An Account?";
+const kAlreadyHaveAccount = "Already have An Account?";
 const kMessages = "Messages";
+const kDisconnected = "You've been disconnected succesfully";
+const kLoginFailure = "Failed to login, please try again!";
+const kLoginRegisterHeaderTitle = "Let's, get going";
+const kRegisterHeaderSubTitle = "Register an account using the form bellow";
+const kName = "Name";
+const kPleaseFillForm = "Please, fill all fields.";
+const kAccountCreated = "You're accoun has been created successfully";

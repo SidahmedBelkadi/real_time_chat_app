@@ -17,7 +17,7 @@ class ChatApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: appTheme,
+      theme: getAppTheme(context: context),
       initialRoute: _authService.user != null ? AppRoutes.home : AppRoutes.login,
       routes: routes,
     );
